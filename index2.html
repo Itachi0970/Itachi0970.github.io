@@ -7,14 +7,12 @@
 	<script src="genreParser.js"></script>
 	<script src="genreConverter.js"></script>
 	<script src="searchParser.js"></script>
-	<script src="recommendAnimeOnce.js"></script>
+	<script src="recommendAnimeMAL.js"></script>
 	<script type="text/javascript">
-var toSearch = prompt("Enter an anime you like:");
-toSearch = toSearch.replace(/ /g,"+");
-//var username = prompt("Enter your MAL username:");
+var username = prompt("Enter your MAL username:");
 var results;
 
-recommendAnimeOnce(toSearch, function(call) {
+recommendAnimeMAL(username, function(call) {
 	results = call;
 	alert(call);
 });
